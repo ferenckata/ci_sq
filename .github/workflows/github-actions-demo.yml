@@ -15,7 +15,7 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - uses: actions/setup_python
+      - uses: actions/setup_python@v5
       - name: Run the code
         run: |
           pip install -e .
