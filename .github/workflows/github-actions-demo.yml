@@ -15,4 +15,9 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+      - uses: actions/setup_python
+      - name: Run the code
+        run: |
+          pip install -e .
+          python cisq/cisq.py
       - run: echo "🍏 This job's status is ${{ job.status }}."
