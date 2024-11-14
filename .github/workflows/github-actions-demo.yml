@@ -20,4 +20,8 @@ jobs:
         run: |
           pip install -e .
           python cisq/cisq.py
+      - name: Test the code
+        run: |
+          pip install pytest
+          pytest .
       - run: echo "🍏 This job's status is ${{ job.status }}."
