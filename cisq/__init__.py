@@ -1,0 +1,1 @@
+from .cisq import main
